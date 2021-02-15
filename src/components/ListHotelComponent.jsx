@@ -36,13 +36,13 @@ class ListHotelComponent extends Component {
                                 {
                                     
                                     this.state.hotels.map(
-                                        employee =>
-                                        <tr key = {employee.hotelId}>
-                                            <td> { employee.hotelId} </td>
-                                            <td> { employee.roomCategoryId} </td>
-                                            <td> { employee.occupancy} </td>
-                                            <td> { employee.date} </td>
-                                            <td> { employee.price} </td>
+                                        hotel =>
+                                        <tr key = {hotel.hotelId}>
+                                            <td> { hotel.hotelId} </td>
+                                            <td> { hotel.roomCategoryId} </td>
+                                            <td> { hotel.occupancy} </td>
+                                            <td> { hotel.date} </td>
+                                            <td> { hotel.price} </td>
                                         </tr>
                                     )
                                 }
